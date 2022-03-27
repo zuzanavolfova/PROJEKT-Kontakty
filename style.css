@@ -40,15 +40,19 @@ h2 {margin-top: 0;}
 		display: flex;
 		flex-wrap: wrap;
 	}
-
+	.kontaktText {
+		padding: 0 0 0 20px;
+	}
 	.kontakt {
 		display: flex;
 		text-align:left;
 		align-items: center; 
 		margin: 10px;
-		flex-shrink: 1;
+		flex-basis: calc(50% - 20px)
 	}
+	.profilovka img {width: 60px;}
 }
+
 
 
 
