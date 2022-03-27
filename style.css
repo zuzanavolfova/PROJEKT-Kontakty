@@ -18,22 +18,23 @@ PC      960px a víc
  h1 {text-align: center;
 }
 h2 {margin-top: 0;}
-
+.seznamKontaktu {
+	position: relative;
+	margin: 20px auto;
+}
 .kontakt {
 	max-width: 540px;
+	border: 1px solid rgb(216, 214, 214);
 	box-shadow: 1px 2px 3px rgb(195, 195, 195);
+	border-radius: 5px;
 	text-align: center;
 	padding: 20px;
-	position: relative;
-	margin: 20px auto;	
+	margin: 20px;	
 }
 
 .kontakt img {
 	border-radius: 50%;
 }
-.kontaktText {
-	padding: 20px;
-	}
 
 @media screen and (min-width: 540px) {
 	.seznamKontaktu {
@@ -53,6 +54,22 @@ h2 {margin-top: 0;}
 	.profilovka img {width: 60px;}
 }
 
+@media screen and (min-width: 960px) {
+	.kontakt {
+		display: block;
+		text-align: center;
+		flex-basis: calc(25% - 20px);
+	}	
+	.kontaktText {
+		padding: 0;
+	}
+	.profilovka img {
+		width: auto;
+	}
+	.kontaktText h2 {
+		margin-top:20px;
+	}
+}
 
 
 
